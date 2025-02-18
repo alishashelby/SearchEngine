@@ -1,7 +1,7 @@
 # Search Engine
 
 ## Overview
-Implementation of full-text search with inverted index and BM25 ranking.
+Implementation of full-text search with inverted index and **BM25** ranking.
 
 ## Features
 
@@ -18,9 +18,9 @@ Implementation of full-text search with inverted index and BM25 ranking.
   - Trie for term lookup
   - Memory-mapped files for large indices
 
-### Query syntax
+## Query syntax
 
-The following queries are considered valid
+`The following queries are considered valid`
 
  - "for"
  - "vector OR list"
@@ -31,7 +31,7 @@ The following queries are considered valid
  - "(while OR for) and vector"
  - "for AND and"
 
-Invalid requests are considered
+`Invalid requests are considered`
  - "for AND"
  - "vector list"
  - "for AND OR list"
@@ -50,7 +50,7 @@ Invalid requests are considered
 ```bash
 ./search k
 ```
-where k is is the top-k results after ranking the found documents according to BM25.
+where k is is the top-k results after ranking the found documents according to **BM25**.
 
 ## Testing
 
